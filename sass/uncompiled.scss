@@ -1,0 +1,1274 @@
+// Variables
+$red: #ff6563;
+$white: #c4c2bb;
+$blue: #554c54; // end variables
+// *{
+//
+// }
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("../img/hourglass.gif") no-repeat center center #fff;
+}
+@keyframes loadFadeIn{
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: loadFadeIn 0.9s ease-in forwards;
+}
+.not-loaded{
+  animation-play-state: paused;
+}
+
+.success {
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    color: #FFF;
+    background-color: rgba(90, 129, 243, 0.26);
+    border: 1px #aaa solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.error {
+    padding: 1em;
+    margin-bottom: 0.75rem;
+    color: #FFF;
+    background-color: rgba(243, 90, 96, 0.26);
+    border: 1px #aaa solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2 {
+    font-family: 'Pacifico', serif;
+}
+
+a,
+button,
+label,
+p {
+    font-family: 'Quicksand', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    background: rgba(255,255,255,0.2);
+}
+
+.form-control,
+input,
+textarea {
+    // background: rgba(255,255,255,0.2);
+    color: $white;
+    border: 1px #aaa solid;
+}
+
+#name {
+    background: rgba(99,101,255,0.2);
+}
+
+#email,
+#textArea {
+    background: rgba(255,101,99, 0.2);
+}
+
+#website {
+    background: rgba(255,255,255,0.2);
+}
+
+.form-group,
+button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-linkedin {
+    // color: #1A85BC;
+}
+
+#about {
+    background: $blue;
+    color: $white;
+    overflow: hidden;
+    // background: url('../img/fireworks.png');
+    // background-size: 30%;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: center;
+    // &::before{
+    //   background: $blue;
+    // }
+}
+
+#portfolio {
+    background: url('../img/bison.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    // color:;
+    overflow: hidden;
+}
+
+#contact {
+    color: #fff;
+    background: url('../img/standing-alone.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(10,10,10,0.7);
+        display: block;
+    }
+}
+
+.portfolio-navigation-nav {
+    position: fixed;
+    min-height: 50px;
+    display: flex;
+    z-index: 9999;
+    background: rgba(255,255,255, 0.9);
+    width: 100%;
+    left: 0;
+    box-shadow: 0 5px $red;
+}
+
+.portfolio-navigation-header {
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+.portfolio-container {
+    background: linear-gradient(to bottom, #555, #111);
+    // background-attachment: fixed;
+    // background-size: cover;
+}
+
+.portfolio-about-introduction {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    text-align: left;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.portfolio-about-firstsentence {
+    margin-bottom: 50px;
+}
+
+.portfolio-header-navigation {
+    width: 100%;
+    border: none;
+    min-height: 100px;
+    margin-top: 20px;
+    background: rgba(0,0,0,0);
+    // background: url('../img/unopened-navigation.png');
+    // // background-position: center;
+    // background-size: cover;
+}
+
+.portfolio-about-header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    h1 {
+        color: #ddd;
+        font-size: 3.5em;
+    }
+
+    p {
+        color: #ddd;
+    }
+}
+
+.portfolio-about-photosection {
+    margin-bottom: 30px;
+}
+
+.portfolio-about-photos {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-about-navigation {
+    // min-width: 0px;
+    right: 10px;
+}
+// ul{
+//   list-style-type: none;
+// }
+
+li {
+    margin-bottom: 20px;
+    // text-decoration: none;
+}
+
+.portfolio-about-navbar {
+    height: 45px;
+    margin-top: 15px;
+    min-width: 150px;
+    position: absolute;
+}
+
+.portfolio-about-navred {
+    background: $red;
+    color: $red;
+}
+
+.portfolio-about-navwhite {
+    background: $white;
+    color: $white;
+}
+
+.portfolio-about-navblue {
+    background: $blue;
+    color: $blue;
+}
+
+.portfolio-about-red {
+    color: $red;
+}
+
+.portfolio-about-white {
+    color: $white;
+}
+
+.portfolio-about-blue {
+    color: $blue;
+}
+
+#header {
+    background: #554c54;
+}
+
+.portfolio-about-wrapper {
+    background-image: url("../img/patriot-banner.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.portfolio-about-wrapper {
+    overflow: hidden;
+}
+
+.portfolio-about-photo {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.portfolio-about-image {
+    border-bottom-right-radius: 60px;
+    // border-bottom-left-radius: 60px;
+    // need media query to add border-bottom-left-radius: 60px;
+}
+
+.portfolio-about-header {
+    //   padding-bottom: 30px;
+    //   border-bottom: white 4px solid;
+    // text-align: center;
+}
+
+.portfolio-about-quote {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.portfolio-about-dinosaur {
+    //   background: url('../img/dinosaur4.png');
+    padding-right: 0 !important; //   background-size: cover;
+    //   background-position: left;
+    //   min-height: 800px;
+}
+
+.portfolio-endorsements-header {
+    text-align: center;
+    // margin-bottom: 50px;
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+.portfolio-work-header {
+    text-align: center;
+    z-index: 2;
+    // margin-bottom: 50px;
+    h1 {
+        font-size: 1.8em;
+    }
+}
+// .wrapper {
+//   background-color: rgba(173,224,230,.9);
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//
+// }
+// #contact{
+//   background: url('../img/banner.png');
+//   background-attachment: scroll;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.backgroundc-color {
+    background: blue;
+}
+
+.portfolio-work-container {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 13em;
+}
+
+.portfolio-work-container3 {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 13em;
+}
+// .portfolio-work-container3 {
+//   background-size: cover;
+//   background-position: center;
+//   text-align: center;
+//   height: 13em;
+//
+// }
+
+.portfolio-work-container2 {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 13em;
+    // margin-top:45px; --> is going to be required to fix the mobile view
+}
+// .portfolio-work-workplate{
+//   text-align: center;
+//   height: 13em;
+//   // background: url("../img/ltyc.png");
+// background: green;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.portfolio-work-underpannel {
+    background: rgba(40, 90, 220, 0.76);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #ddd;
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 1.6em;
+    }
+}
+// .portfolio-work-geneslaysgirlsandboys {
+//     background: url('../img/gbg.jpg');
+//     background-size: cover;
+//     background-position: center;    old portfolio display chunk
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-geneslaysgirlsandboys2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: green;
+    // background: url('../img/gbg.jpg');
+    // background-size: cover;
+    // background-position: center;
+    // text-align: center;
+}
+
+.portfolio-work-geneslaysgirlsandboys2:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-geneslaysgirlsandboys2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/gbg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    // box-shadow: inset 5em 1em gold;
+}
+
+.portfolio-work-geneslaysgirlsandboys2:focus:before,
+.portfolio-work-geneslaysgirlsandboys2:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+    // background: $blue;
+    // color: green;
+    // background: green;
+}
+// .portfolio-work-littletraverseyachtclub {
+//     background: url('../img/littletraverseyachtclub.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-littletraverseyachtclub {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-littletraverseyachtclub:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-littletraverseyachtclub::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/littletraverseyachtclub.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-littletraverseyachtclub:focus:before,
+.portfolio-work-littletraverseyachtclub:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-altenheimseniorservices {
+//     background: url('../img/altenheimseniorservices.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-altenheimseniorservices {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-altenheimseniorservices:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-altenheimseniorservices::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/altenheimseniorservices.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-altenheimseniorservices:focus:before,
+.portfolio-work-altenheimseniorservices:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-quiggpay {
+//     background: url('../img/quiggpay.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-quiggpay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-quiggpay:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-quiggpay::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/quiggpay.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-quiggpay:focus:before,
+.portfolio-work-quiggpay:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-javascriptprimex {
+//     background: url('../img/javascriptprimex.jpg');
+//     background-size: cover;
+//     background-position: top;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-javascriptprimex {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-javascriptprimex:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-javascriptprimex::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/javascriptprimex.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-javascriptprimex:focus:before,
+.portfolio-work-javascriptprimex:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-happytails {
+//     background: url('../img/happytails.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-happytails {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-happytails:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-happytails::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/happytails.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-happytails:focus:before,
+.portfolio-work-happytails:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-foresiteeldercare {
+//     background: url('../img/foresiteeldercare.jpg');
+//     background-size: cover;
+//     background-position: top;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-foresiteeldercare {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-foresiteeldercare:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-foresiteeldercare::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/foresiteeldercare.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-foresiteeldercare:focus:before,
+.portfolio-work-foresiteeldercare:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-bavariamemorycare {
+//     background: url('../img/bavariamemorycare.jpg');
+//     background-size: cover;
+//     background-position: top;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-bavariamemorycare {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-bavariamemorycare:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-bavariamemorycare::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bavariamemorycare.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-bavariamemorycare:focus:before,
+.portfolio-work-bavariamemorycare:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-landdynamics {
+//     background: url('../img/landdynamics.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-landdynamics {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-landdynamics:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-landdynamics::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/landdynamics.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-landdynamics:focus:before,
+.portfolio-work-landdynamics:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-westrichphotography {
+//     background: url('../img/westrich-photography.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-westrichphotography {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-westrichphotography:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-westrichphotography::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/westrich-photography.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-westrichphotography:focus:before,
+.portfolio-work-westrichphotography:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-jellybunnyhop {
+//     background: url('../img/jelly-bunny-hop.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-jellybunnyhop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-jellybunnyhop:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-jellybunnyhop::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/jelly-bunny-hop.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-jellybunnyhop:focus:before,
+.portfolio-work-jellybunnyhop:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-odellacompany {
+//     background: url('../img/odella-company.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-odellacompany {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-odellacompany:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-odellacompany::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/odella-company.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-odellacompany:focus:before,
+.portfolio-work-odellacompany:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-foresitepatientcare {
+//     background: url('../img/foresitepatientcare.jpg');
+//     background-size: cover;
+//     background-position: top;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-foresitepatientcare {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-foresitepatientcare:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-foresitepatientcare::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/foresitepatientcare.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-foresitepatientcare:focus:before,
+.portfolio-work-foresitepatientcare:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-betaportfolio {
+//     background: url('../img/betaportfolio.jpg');
+//     background-size: cover;
+//     background-position: top;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-betaportfolio {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-betaportfolio:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-betaportfolio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/betaportfolio.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-betaportfolio:focus:before,
+.portfolio-work-betaportfolio:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-minibrowser {
+//     background: url('../img/minibrowser.jpg');
+//     background-size: cover;
+//     background-position: top;
+//     text-align: center;
+//     height: 13em;
+// }
+
+.portfolio-work-minibrowser {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.portfolio-work-minibrowser:before {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3599s ease-out;
+}
+
+.portfolio-work-minibrowser::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/minibrowser.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.portfolio-work-minibrowser:focus:before,
+.portfolio-work-minibrowser:hover:before {
+    top: -0.02em;
+    width: 100%;
+    height: 10px;
+}
+// .portfolio-work-workplate3{
+//   background: url('../img/patientcare.png');
+//   background-size: cover;
+//   background-position: center;
+//   text-align: center;
+//   height: 13em;
+//   // background:blue;
+// }
+
+.portfolio-work-workplate-header {
+    padding-bottom: 3vw;
+    // display:flex;
+    // align-items: flex-start;
+    // background:blue;
+    // justify-content: center;
+}
+
+.portfolio-work-workplate-paragraph {
+    // display: flex;
+    //   align-items: center;
+    //   text-align: center;
+}
+
+.portfolio-contact-name {
+    padding-left: 0;
+    // padding-right: 0;
+}
+
+.portfolio-contact-email {
+    // padding-left: 0;
+    padding-right: 0;
+}
+
+.glass {
+    background: rgba(55,90,127, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.portfolio-recommendation-faceplate {
+    background: url('../img/clients-justin.jpg');
+    // background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    min-height: 700px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    h3 {
+        text-align: center;
+    }
+
+    p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+.portfolio-recommendation-photo {
+    background: url('../img/endorsements-aaron.jpg');
+    background-position: top;
+    width: 100%;
+    background-size: cover;
+    // background: $blue;
+    // margin: 30px;
+    min-height: 500px;
+    display: inline-block;
+    bottom: 0;
+}
+
+.portfolio-recommendation-container {
+    margin-bottom: 50px;
+    animation-duration: 14s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+  }
+@keyframes fade {
+  0% {
+    opacity: 0;
+    // color: rgba(255, 255, 255, 0.0);
+  }
+  30% {
+    opacity: 1;
+    // color: rgba(255, 255, 255, 1);
+  }
+  80% {
+    opacity: 1;
+    // color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    opacity: 0;
+    // color: rgba(255, 255, 255, 0.0);
+  }
+}
+
+.portfolio-recommendation-textcontainer {
+    width: 100%;
+    // background: $red;
+    min-height: 350px;
+    display: inline-block;
+
+    .portfolio-recommendation-name {
+        text-align: center;
+
+        h3 {
+            font-family: 'Pacifico', serif;
+            font-size: 1.7em;
+        }
+        // background: $red;
+    }
+
+    .portfolio-recommendation-quote {
+        text-align: center;
+        // background: $red;
+    }
+}
+
+.portfolio-media-header {
+    padding-bottom: 2vw;
+    color: rgba(255, 255, 255, 0);
+}
+
+.portfolio-media-container {
+    text-align: center;
+    // text-decoration: underline;
+    .portfolio-media-github {
+        a:focus,
+        a:hover {
+            //something about this will work, the problem is
+            background: url('../img/fireworks.png');
+            //something going on in the bootstrap file that overwrites it
+            background-size: 1000% 1000%;
+        }
+    }
+}
+// .large-only{
+//   display: none;
+// }
+@import 'mixins/mixins';
+@import 'media-queries/media-queries';

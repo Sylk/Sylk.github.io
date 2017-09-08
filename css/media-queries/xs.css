@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+  h1 {
+    font-size: 9vw; }
+
+  .portfolio-navigation-header h2 {
+    font-size: 1.0em; }
+
+  .portfolio-about-image {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px !important; }
+
+  .portfolio-about-header {
+    padding-bottom: 0; }
+
+  .portfolio-about-quote {
+    margin-top: 15px; }
+
+  .portfolio-work-container {
+    min-height: 350px;
+    margin-top: 45px; }
+
+  .portfolio-work-container3 {
+    min-height: 350px;
+    margin-top: 45px;
+    margin-bottom: 20px; }
+
+  .portfolio-work-underpannel {
+    padding-left: 10px;
+    padding-right: 10px; }
+    .portfolio-work-underpannel h3 {
+      font-size: 1.2em; }
+    .portfolio-work-underpannel p {
+      font-size: 0.8em; }
+    .portfolio-work-underpannel footer {
+      margin-top: 20px;
+      font-size: 1.2em; }
+
+  .portfolio-media-icons {
+    font-size: 0.65em;
+    text-align: center; }
+
+  .portfolio-media-bracket {
+    font-size: 4.5em; } }
+
+/*# sourceMappingURL=xs.css.map */

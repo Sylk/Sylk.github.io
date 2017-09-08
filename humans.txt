@@ -1,0 +1,16 @@
+/* TEAM */
+Your title: Matthew Thomas Bauer
+Site: www.mtbauer.me
+Twitter: @LotusBladeStorm
+
+/* THANKS */
+Name: Jeremy Fama
+Who: My mentor since I was young, without you
+I don't know if I would have been as interested
+in web development as I am now.
+Site: www.webcakes.ca
+
+/* SITE */
+Last update: 2017/01/27
+Components: Modernizr, Bootstrap 3, Vanilla JS, jQuery, PHP
+Software: Atom Editor and Chrome Debugging Tools!

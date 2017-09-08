@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,0BAA0B;EACxB,sBAAuB;IACrB,OAAO,EAAC,KAAK",
+"sources": ["../../sass/media-queries/1200.scss"],
+"names": [],
+"file": "1200.css"
+}

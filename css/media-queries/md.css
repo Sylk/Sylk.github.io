@@ -1,0 +1,25 @@
+@media (min-width: 992px) {
+  .portfolio-work-header h1 {
+    font-size: 4.5em;
+    margin-bottom: 30px; }
+
+  .portfolio-work-underpannel {
+    background: rgba(40, 90, 220, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #ddd; }
+    .portfolio-work-underpannel h3 {
+      font-size: 1.5em; }
+    .portfolio-work-underpannel footer {
+      margin-top: 20px;
+      font-size: 2.5em; } }
+
+/*# sourceMappingURL=md.css.map */

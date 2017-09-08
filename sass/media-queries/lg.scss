@@ -1,0 +1,57 @@
+@media (min-width: 1200px){
+  .small-only{
+    display: none;
+  }
+
+  .large-only{
+    display: flex;
+  }
+  .portfolio-navigation-header{
+    h2{
+      font-size: 2em;
+    }
+  }
+
+  .portfolio-about-header{
+    h1{
+      font-size: 5.5em;
+    }
+  }
+
+  .portfolio-work-header{
+    margin-top:35px;
+  }
+  .portfolio-work-underpannel {
+    h3{
+      font-size: 1.4em;
+    }
+  }
+  .portfolio-about-wrapper{
+        min-height: 950px;
+  }
+  .portfolio-about-introduction{
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+  .portfolio-about-image {
+    display:block;
+  }
+  .portfolio-media-bracket{
+    font-size: 7em;
+    text-align: center;
+  }
+  .portfolio-recommendation-photo {
+      // width: 25%;
+      min-height: 400px;
+  }
+  .portfolio-recommendation-container{
+    height: 600px;
+  }
+  .portfolio-recommendation-textcontainer {
+      // width: 70%;
+    }
+  // #contact, #portfolio {
+  //   padding-top: 50px;
+  // }
+}
