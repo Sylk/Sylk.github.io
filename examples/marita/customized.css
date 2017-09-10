@@ -1,0 +1,136 @@
+* {
+    font-family: lato;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-reposition-right {
+    margin-right: 100px;
+}
+
+.navbar-space {
+    padding-left: 25px;
+}
+
+.j1 {
+    background-image: url("../images/mountain3.jpg");
+    background-size: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    height: 375px;
+}
+
+.j2 {
+    background: url(../images/city-top.jpg);
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    height: 375px;
+}
+.jumbotron h1 {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+.centerMe {
+    display: block;
+    margin: auto;
+}
+
+.magicRow {
+    background: url(../images/herobanner.jpg);
+}
+
+.midRowContent {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bioHero {
+    background: url(../images/trashedbeach.jpg);
+}
+
+.footerSettings {
+    min-height: 35px;
+    background: rgba(248, 248, 248, 0.9);
+}
+
+.footerHeight {
+    margin-top: 10px;
+}
+
+.right {
+    text-align: center;
+}
+
+.middle {
+    text-align: center;
+}
+
+.left {
+    text-align: center;
+}
+
+.leftAlign{
+    text-align: left;
+}
+.turnGray {
+    background: #767676;
+    text-align: center;
+    min-height: 100px;
+    padding-top: 10px;
+}
+.turnGray2 {
+    background: #9a9a9a;
+    min-height: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.turnGray3 {
+    background: rgba(50, 50, 250, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.iLoveMemes {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(100, 120, 250, 0.1);
+}
+
+.marginMe {
+     margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.backgroundPhoto {
+    background: url(/images/ocean-boat.jpg);
+    background-size: cover;
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+   .phoneNumber {
+       pointer-events: none;
+       cursor: default;
+}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+   .phoneNumber {
+       pointer-events: none;
+       cursor: default;
+}
+}
+/* Should put music on a soundcloud Iframe potentially to decrease bandwith consumption from our website */

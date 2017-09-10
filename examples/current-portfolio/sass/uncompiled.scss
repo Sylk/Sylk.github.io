@@ -1,0 +1,78 @@
+.portfolio-about-photo{
+  padding-left: 0;
+  padding-right: 0px;
+}
+
+.portfolio-about-image{
+  border-bottom-right-radius: 60px;
+  // border-bottom-left-radius: 60px;
+  // need media query to add border-bottom-left-radius: 60px;
+}
+
+.portfolio-about-header{
+  // font-size: ;
+  text-align: center;
+}
+
+.portfolio-about-quote{
+  text-align: center;
+  font-size: 4vw;
+}
+
+.portfolio-work-header{
+  text-align: center;
+}
+
+.portfolio-work-workplate{
+  text-align: center;
+  height: 15vw;
+  background:green;
+}
+.portfolio-work-workplate2{
+  text-align: center;
+  height: 15vw;
+  background:red;
+}
+.portfolio-work-workplate3{
+  text-align: center;
+  height: 15vw;
+  background:blue;
+}
+
+.portfolio-work-workplate-header{
+  padding-bottom: 3vw;
+  // display:flex;
+  // align-items: flex-start;
+  // background:blue;
+  // justify-content: center;
+
+}
+
+.portfolio-work-workplate-paragraph{
+// display: flex;
+//   align-items: center;
+//   text-align: center;
+}
+
+.portfolio-contact-name{
+  padding-left: 0;
+  // padding-right: 0;
+}
+.portfolio-contact-email{
+  // padding-left: 0;
+  padding-right: 0;
+}
+
+.portfolio-media-header{
+  padding-bottom: 2vw;
+}
+
+.portfolio-media-container{
+  text-align: center;
+  // text-decoration: underline;
+}
+
+.largify{
+  font-size: 7em;
+  text-align: center;
+}

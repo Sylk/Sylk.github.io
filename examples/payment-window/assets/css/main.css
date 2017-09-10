@@ -1,0 +1,61 @@
+* {
+  line-height: normal; }
+
+.uk-grid {
+  margin-left: 0;
+  padding-left: 0; }
+
+@media (min-width: 1220px) {
+  .uk-grid > * {
+    padding-left: 0px; } }
+html {
+  background: url("../img/background.png") repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.lava-header-container {
+  /*filter: blur(2px);*/
+  margin-top: 80px;
+  background: rgba(220, 220, 220, 0.4);
+  margin-bottom: 0px;
+  border: 5px solid #FE5900; }
+  .lava-header-container .lava-header-text {
+    text-align: center;
+    font-family: 'Sonsie One', cursive;
+    font-size: 60px;
+    font-weight: 900;
+    color: #FE5900;
+    margin-bottom: 0px; }
+
+.green {
+  background: green !important; }
+
+.blue {
+  background: blue !important; }
+
+.lava-body-container {
+  border: 5px solid #FE5900;
+  border-top: none;
+  padding-bottom: 35px;
+  /*border-radius: 50px;*/
+  margin-top: 0px;
+  background: rgba(220, 220, 220, 0.4); }
+  .lava-body-container .lava-body-data {
+    font-size: 3em;
+    font-family: 'Nunito', cursive;
+    color: #FE5900;
+    text-align: center; }
+    .lava-body-container .lava-body-data .lava-body-datacontent {
+      background: rgba(220, 220, 220, 0.6); }
+  .lava-body-container .lava-body-graphs {
+    font-size: 3em;
+    font-family: 'Nunito', cursive;
+    color: #FE5900;
+    text-align: center; }
+    .lava-body-container .lava-body-graphs .lava-body-graphscontent {
+      background: rgba(220, 220, 220, 0.6); }
+
+/*# sourceMappingURL=compiled-scss.css.map */
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,12 @@
+.dance{
+    animation-name: dance;
+    animation-duration: 4s;
+}
+
+@keyframes dance {
+    0% {left:25%;}
+    25% {left: 25%; top: 25%;}
+    50% {left: 25%; top: 25%;}
+    75% {right: 25%; top: 25%;}
+    100% {right: 25%; top: 25%;}
+}

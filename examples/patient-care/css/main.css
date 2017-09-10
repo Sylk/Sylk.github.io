@@ -1,0 +1,219 @@
+
+
+/* ==========================================================================
+   Universal Styles
+   ========================================================================== */
+
+
+.mobile{
+    display: none;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.center-image{
+    margin: 0 auto;
+}
+
+.lower-collapse{
+    margin-top: 10%;
+    width: 80%;
+    text-align: center;
+}
+
+.custom-nav{
+    border: none;
+    top: 0;
+    font-size: 1.2em;
+}
+
+.navbar-default {
+    background-color: #FFF;
+}
+
+.custom-branding{
+    float: left;
+    position: absolute;
+}
+.branding{
+    font-size: 3em;
+    color: #D3E8BC;
+    font-weight: 700;
+}
+.li-spreading{
+    padding-right: 15px;
+    padding-top: 6%;
+    color: white;
+}
+
+.div-nav{
+     color:#337AB7;
+     font-size: 1.4em;
+     text-align: center;
+    
+}
+.footer-div{
+    background: #00B6A0;
+}
+
+.footer-tag{
+    width:100%;
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 1%;
+    color: #FFF;
+}
+.navbar-brand{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 0;
+}
+/* ==========================================================================
+   Custom Navigation
+   ========================================================================== */
+.navbar-toggle{
+    margin-top: 20px;
+}
+.navbar-custom {
+  background-color: #ffffff;
+  border-color: #00B6A0;
+}
+.navbar-custom .navbar-brand {
+  color: #000000;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-custom .navbar-text {
+  color: #000000;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #00B6A0;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu {
+  background-color: #ffffff;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a {
+  color: #000000;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  background-color: #00B6A0;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #00B6A0;
+}
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  background-color: #00B6A0;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #00B6A0;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #00B6A0;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #00B6A0;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #00B6A0;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #FFF;
+}
+.navbar-custom .navbar-link {
+  color: #FFF;
+}
+.navbar-custom .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #00B6A0;
+  }
+}
+
+
+/* ==========================================================================
+   Mobile Pushdown for Menu
+   ========================================================================== */
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+    .mobile{
+        display: block;
+    }
+    .non-mobile{
+        display: none;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media ((min-width: 768px) and (max-width: 1199) { 
+    .mobile{
+        display: none;
+    }
+    .non-mobile{
+        display: block;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mobile{
+        display: none;
+    }
+    .non-mobile{
+        display: block;
+    }
+}
+
+
+
+
+
+

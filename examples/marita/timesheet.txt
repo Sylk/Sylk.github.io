@@ -1,0 +1,34 @@
+4/14/2015 4:01 P.M. - 11: P.M
+
+Spent Designing Mock Sites and combining color schemes that would work due to little input from client on specificity of the website
+Also achieved a basic naviagtion bar that looked sleek and attained the overall value that was wanted.
+
+4/17/2015 5:42 P.M - 12:23 A.M
+
+Looked for pictures and other necesary items to the web page that would fit due to having little input and given pieces to work with.
+Also designed basic logo from 7PM-8:30PM
+Color Logo from 8:30-9:20
+Finishing touches on logo at 9:20-9:30
+Scraped logo into appropriate various sizes 9:30-9:40
+Began to transfer from PNG to ICO variants for the image 9:40-10:00
+Applied code to web pages for ICO variants based upon devices 10:00 - 12:23
+
+4/20/2015 6:00 P.M. - 8:30 P.M.
+
+Spent time Designing the First Home page of the site and picking out the color combinations that would work well overall
+Spent time Aligning elements to pleasing UI based upon prior design experience
+
+4/22/2015 3:40 P.M. - 7:00 P.M. 
+
+Adjusted elements on the home page to achieve final work based upon design experiences.
+
+4/30/2015 5:25 P.M - 9:32 P.M
+
+Redesigning the entire Front Home page and selecting Images that were Suitable to the clients needs along with minor photoshoping
+
+
+5/23/2015 4:00 P.M. - 8:27 P.M
+
+Researching Z-Index key features and re-designing the entire Credits page based upon feedback
+Photoshoped Curtains to accomodate page correctly and same with the lights
+

@@ -1,0 +1,101 @@
+
+/*===========================
+    Loader
+============================*/
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../img/ajax-loader.gif') 50% 50% no-repeat rgb( 0,0,0);
+}
+.model{
+	background: #39424D;
+}
+body,
+html {
+    height: 100%;
+    width: 100%;
+		background: #39424D;
+}
+
+#portfolio {
+    height: 100%;
+    width: 100%;
+    background: #39424D;
+}
+
+.model {}
+
+.header {
+    text-align: center;
+    padding-top: 3%;
+    color: floralwhite;
+    font-size: 2em;
+}
+
+.adjust-size {
+    font-size: 3em;
+}
+
+.no {
+    margin: none;
+    padding: none;
+}
+
+.center-text {
+    text-align: center;
+    color: floralwhite;
+    margin-top: -1.2%;
+    margin-bottom: 1.5%;
+}
+
+.brush-bottom {
+    margin-top: ;
+}
+
+#tabs {
+    background: rgba(10, 0, 0, 0);
+    border: none;
+}
+
+#tab-holder {
+    background: rgba(50, 50, 50, 0.5);
+    border: none;
+}
+
+.ruby-bg {
+    background: url("../img/ruby.png");
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

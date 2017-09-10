@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container{
+  margin: 0;
+  height: 100%;
+  background: url('../images/mountain-1.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+// .container::before{
+//   content: "";
+// position: absolute;
+// top: 0;
+// bottom: 0;
+// left: 0;
+// right: 0;
+// background: rgba(10,10,10,0.7);
+// display: block;
+// }
+h1 {
+}
+.openweather-header-h1{
+  margin-left: 15px;
+  font-size: 3em;
+  color: #F0506E;
+}
+
+.openweather-input-container{
+  padding-top: 10px;
+  margin-left: 15px;
+}
+// .openweather-description-container{
+//   text-align: center;
+//   h1{
+//     font-size: 3em;
+//     color: #3F5E7F;
+//   }
+// }
+
+
+// NOTE need to do something with the media queries where I'm able to change the margin top the height of the containers the margins, and all that crap on the smallest version
+
+.openweather-weather-section{
+  margin-top:30%;
+}
+
+.openweather-weather-container{
+  text-align: center;
+  background: rgba(240, 240, 240, 0.76);
+  border: 2px #3F5E7F solid;
+  margin: 40px;
+  // width: 80%;
+  .openweather-weather-header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #3F5E7F;
+    padding-top: 20px;
+    font-size: 3em;
+  }
+  .openweather-weather-values{
+    font-family: 'Rubik', serif;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-size: 4em;
+    color: #4B7F3F;
+  }
+}
+
+.openweather-weather-temperature{
+}

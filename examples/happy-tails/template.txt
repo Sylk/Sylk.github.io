@@ -1,0 +1,243 @@
+<!-- inside <head> tag -->
+
+<script type="text/javascript">
+/* <![CDATA[ */
+
+<!-- Javascript goes here -->
+
+/* ]]> */
+
+</script>
+<!-- In header (all pages): -->
+
+<h1>Happy Tails Pet Resort</h1>
+<h2>A Fun-filled Day Camp, Spa & Vacation Paradise for Dogs and Cats!</h2>
+
+<img src="images/02.jpg" alt="Photo of front of facility" />
+
+<ul>
+	<li>Hours of Operations </li>
+	<li>Monday-Friday: 7 am - 7 pm</li>
+	<li>Saturday: 8 am - 4 pm</li>
+	<li>Sunday: 10 am - 4 pm</li>
+	<li>We are closed on all major holidays, and hours the day before and after a holiday are subject to change.</li>
+</ul>
+
+<h2>Services:</h2>
+<ul>
+	<li><a href="index.html#boarding">Luxury Pet Hotel</a></li> <!--(Links to boarding.html or boarding section) --> 
+	<li><a href="index.html#daycare">Doggy Daycare</a></li> <!-- (Links to daycare.html or daycare section) -->
+	<li><a href="index.html#grooming">Grooming Spa and Salon</a></li> <!-- (links to grooming.html or grooming section) -->
+	<li><a href="index.html#testimonials">Testimonials</a></li> <!-- (links to testimonials.html or testimonials section) -->
+</ul>
+
+<blockquote>
+Location
+2139 Fillmore Street
+Old Town Square, PA 19073
+</blockquote>
+
+<blockquote>
+Phone: 800.235.PAWS (7297)	
+Email: <a href="mailto:info@HappyTails.com">info@HappyTails.com</a>
+</blockquote>
+
+(google map goes here)
+
+<!-- Boarding.html -->
+<a href="#" id="boarding"></a>
+
+<h1>Dog Boarding</h1>
+
+<img src="images/04.jpg" alt="photo of a dog on a bed" />
+
+<p>
+	At Family Pet Resort, we are an all-inclusive all-suites resort that provides everything for your pet during their stay with us. We are happy to provide every guest with plush bedding and plenty of toys, so there’s no need to bring any from home. We proudly serve Canidae brand Low Residue dog food; however, if you choose to provide your own food, please provide pre-measured baggies with feeding instructions. For those dogs with a sweet tooth, ice cream treats and biscuits are available, as well as gourmet stuffed kong treats.
+</p>
+
+<img src="images/27.jpg" alt="decorative image of two polaroids of dogs" />
+
+<p>
+	What do you have in mind when you think of a typical boarding kennel? You will not find a more elite kennel in Pennsylvania. Please come in and visit us and see for yourself what sets our family friendly resort apart from the other kennels. Our canine accommodations offer all the services you would expect from a five-star resort including room service, maid service, soothing music and clean & comfortable climate-controlled suites. Our state of the art facilities also exchange fresh air throughout the resort approximately 6 to 8 times per hour. 
+</p>
+
+<h2>Luxury Suites start from only $32.00 per night. </h2>
+
+<p>
+	Contact us about our Ultra Luxury Vacation Villas that include TV’s and our Oversized Family Suites for families with multiple pets.
+</p>
+
+Cat Boarding 
+<p>
+	Our Feline friends prefer a slightly quieter environment than their canine counterparts, so we have dedicated a section of our resort entirely to them. 
+</p>
+<p>
+	Our peaceful and private luxury condos have calming music piped in to create a soothing, spa-like environment. We also have a larger condo to accommodate cat families – or individual cats that enjoy their space.
+</p>
+	
+<h2>Luxury Kittie Condo’s Only $34 night.  </h2>
+
+
+<!-- Included on this page but in a separate window or dropdown or something: -->
+
+<h2>Boarding Requirements </h2>
+
+<p>
+	In order to keep your pet happy and healthy, we require vaccinations to prevent the spread of common canine and feline diseases. Proof of vaccination is required and kept on file at our facility. 
+</p>
+
+<h3>Dogs - The following vaccinations are required prior to boarding your dog:</h3>
+<ul>
+	<li>Rabies - required once every three years</li> 
+	<li>DHLPP - required once every year</li>
+	<li>Bordatella – required every 6 months</li>
+</ul>
+
+<h3>Cats - The following vaccinations are required prior to boarding your cat:</h3>
+<ul>
+	<li>Rabies - required once every three years</li>
+	<li>FCRVP - required once every year</li>
+</ul>
+
+<!-- daycare.html -->
+
+<a href="#" id="daycare"></a>
+
+<h2>Doggy Daycare</h2>
+
+<img src="images/28.jpg" alt="header image for boarding, a golden retriver saying good nights rest guaranteed" />
+
+<p>
+	At the Family Pet Resort we understand dogs and their need to exercise.
+</p>
+
+<p>
+Play time keeps a dog's body and mind active – which we know leads to a healthier & happier member of your family! We also know that being left alone all day can cause destructive behavior like chewing or barking, and our loving staff is dedicated to ensuring that your dog is well cared for at all times. 
+</p>
+
+<p>
+	We invite you to come see the joy and fun they have each day enjoying the fresh air on our 3 acre campus, that houses not only large outdoor play yards, but also a 12,000 sq ft indoor fully heated and air conditioned play yard. They can also stop by our Grooming Salon for a quick touch up or warm massaging bath before coming home that day, or sign them up for some additional K9 Training to make them be their very best. 
+</p>
+<p>
+	One promise we can make you…..after a full day of playing with us, they’ll sleep like babies at night! 
+</p>
+
+<!-- Slideshow or image gallery of more daycare pictures; it would be nice if this section was very visual -->
+
+<img src="images/09.jpg" alt="photo of dogs playing in a dog park" />
+<img src="images/10.jpg" alt="Photo of a trainer with dogs in a dog park" />
+<img src="images/11.jpg" alt="Photo of the dog park from a different angle" />
+<img src="images/12.jpg" alt="Photo of the dog park that also shows the facility" />
+<img src="images/13.jpg" alt="Photo of dogs, the trainer, and a groomer in the dog park" />
+<img src="images/14.jpg" alt="Photo of dogs chasing a ball in the dog park" />
+<img src="images/15.jpg" alt="Photo of a golden retriver about to catch a ball" />
+<img src="images/16.jpg" alt="Photo of the dog park while unoccupied" />
+<img src="images/17.jpg" alt="Photo of a golden retriver" />
+<img src="images/18.jpg" alt="Photo of a golden retriver carrying a medicine ball" />
+<img src="images/19.jpg" alt="Photo of a german shepard and a yellow lab looking at each other" />
+<img src="images/20.jpg" alt="Photo of a close-up of a dog leaning on the dog park fence" />
+<img src="images/21.jpg" alt="Photo of a wet dog in a kiddie pool in the dog park" />
+<img src="images/24.jpg" alt="Photo of a dog in the dog park running with a ball" />
+<img src="images/25.jpg" alt="Photo of a golden retriver investigating tennis balls" />
+
+<!-- Also in a nice separate thing somehow -->
+
+<h3>Daycare Rate: </h3>
+<ul>
+	<li>Only $25 per day</li>
+	<li>Value Saving Packages: </li>
+	<li>$110 - 5 days (only $22/day) </li>
+	<li>$210 - 10 days (only $21/day) </li>
+	<li>$400 - 20 days (only $20/day) </li>
+	<li>Discounts for multiple dogs </li>
+</ul>
+
+
+<!-- grooming.html -->
+
+<a href="#" id="grooming"></a>
+
+<h2>Grooming Spa & Salon</h2>
+
+<img src="images/22.jpg" alt="Photo of a bulldog" />
+
+<p>
+	At Family Pet Resort, we provide complete pet grooming services for your dog and cat. We proudly use the Hydo-Surge Washing System that deep cleans haircoats and provides a soothing message with every bath. Our full complement of trims and spa treatments will have your best friend looking fresh and pampered like never before. Our expert groomers and state of the art equipment ensure pawsitively excellent results! 
+</p>
+	
+<img src="images/29.jpg" alt="decorative image, two polaroids of dogs being bathed" />
+
+<!-- Separate thing again -->
+
+<h3>Services</h3>
+<ul>
+	<li>Bathing/clipping </li>
+	<li>Skin and coat cleansing</li>
+	<li>Treatment rinses</li>
+	<li>Combing and brushing</li>
+	<li>Complete shampoo and blow-dry</li>
+	<li>Flea shampoo & dip</li>
+	<li>Nail care</li>
+	<li>Ear and eye cleaning</li>
+	<li>Hair Styling </li>
+</ul>
+
+** Examples of grooms maybe?
+
+<img src="images/06.jpg" alt="photo of a staff member shaving a dog" />
+<img src="images/05.jpg" alt="cast shot of all the groomers" />
+
+
+*** Testimonials.html
+
+<a href="#" id="testimonials"></a>
+
+<p>
+	This place is great! The staff loves my Root Beer whenever we come in! I don't think there is one person there that doesn't just adore my dog and everyone else's... and the daycare is amazing!—Sjkush on 9/8/2011 
+</p>
+<p>
+	I wish I could bring my fur-baby every day. He loves it. All I have to do is ask him if he wants to play with his friends and he goes nuts. Very friendly staff and it's clean. I love taking him to the resort and I love knowing that I can be at ease when he is there.—Bern on 9/5/2011 
+</p>
+<p>
+	The dogs are all loved by staff as if their own.—diane marie on 9/3/2011 
+</p>
+<p>
+	The staff is wonderful, friendly, professional and accomodating.—Joandaleo on 9/2/2010 
+</p>
+<p>
+	We love this place! Our puggle, Neo, stays here whenever we go out of town and always has a great time. We feel confident he is getting the proper care and attention. He also stays in a glass enclosure versus a small cage and gets to play outside everyday with other dogs his size. It's a dog's life!—Clarson on 9/2/2011 
+</p>
+<!-- This picture might break up the wall of text a bit -->
+<img src="images/23.jpg" alt="Photo of two schnouzers in the snow" />
+<p>
+	I have brought my maltese there a few times for boarding. I thought that he would take time to adjust but he didn't. He fit right in with the friendly staff. Pepe also enjoys his grooming at the Family Pet Resort. They do a really nice job.—Debramartino on 9/8/2011 
+</p>
+<p>
+	Everyone is very nice to my dog. All the employees are young and full of energy.—Drad on 9/1/2011 
+</p>
+<p>
+	Perfect for my pup.—Johinkle on 9/1/2011 
+</p>
+<p>
+	Dogs come home happy and exhausted, tails awagging :)—Mommy on 8/13/2011 
+</p>
+<p>
+	We have a lot of confidence in the owners and staff here. First of all, they love and treat our pets the way we do. Secondly, they've invested in a facility and grounds that is the wave of the future. We will never go back to an old school kennel again... like some along the Main Line with cages and asphalt play areas. Though we wish they would invest more in their grounds, we love, love, love this place. As do our dogs!—Motivus on 8/12/2011 
+</p>
+<p>
+	Staff are always great and my dog has always been taken great care of!!!—cos9w2 on 8/12/2011 
+</p>
+<p>
+	I found the employees to be so caring and interested in every pet that came through the door. The place was very clean. I also watched the employees with the dogs in the yard and they were playing with them! Great interaction. Didn't see 1 employee on a cell phone or not paying attention to the animals. I would highly recommend Family Pet Resort to anyone!—Dseavey on 8/12/2011 
+</p>
+<p>
+	very caring staff.—Michele on 8/11/2011
+</p>
+<img src="images/26.jpg" alt="Photo of a golden retriver puppy saying come, stay and play!" />
+
+<!-- footer -->
+
+<h3>Where Best Friends Play When You’re Away!</h3>
+
+<!-- this image is excisable, it's just there so we use every image -->
+<img src="images/03.jpg" alt="photo of the facility from a side angle" />

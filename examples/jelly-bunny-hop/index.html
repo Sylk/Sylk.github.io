@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Hop Bunny Hop</title>
+<link rel="stylesheet" href="css/super-rad.css" type="text/css" />
+<script type="application/javascript">
+      var mainCharacter = new Image();          //establshes our main character in a variable
+      var deathZone = new Image();
+      var background = new Image();
+      var purpleJelly = new Image();
+      var fireJelly = new Image();
+      var blueJelly = new Image();
+      var greenJelly = new Image();
+      var mainCharacterY = 430;
+      var mainCharacterX = 128;
+      var scrollingY = -2560; 
+      var deathShakeX = -85;
+      var deathShakeY = 550;
+      var iteration = 0;
+      
+      document.onkeydown = checkKey;
+
+    function checkKey(e) {
+    
+        if(mainCharacterY > 400){
+        // if (e.keyCode == '38') {
+        //     mainCharacterY -= 125;
+        //     // up arrow
+        // }
+        
+        if (e.keyCode == '37') {
+            mainCharacterY -= 128;
+            mainCharacterX -= 108;
+           // left arrow
+        }
+        else if (e.keyCode == '39') {
+            mainCharacterY -= 128;
+            mainCharacterX += 108;
+           // right arrow
+        }
+        }
+    }
+      function init(){
+          mainCharacter.src = 'img/bunny.png';  //setting the main characters image
+          deathZone.src = 'img/wet.png';
+          background.src = 'img/background.png';
+          purpleJelly.src = 'img/purplegel.png';
+          fireJelly.src = 'img/firegel.png';
+          blueJelly.src = 'img/derpgel.png';
+          greenJelly.src = 'img/envygooo.png';
+          window.requestAnimationFrame(draw);
+      }
+    function draw() {
+        
+        var ctx = document.getElementById("canvas").getContext('2d');
+        ctx.clearRect(0,0,540,640); // clear canvas
+        
+        ctx.drawImage(background, 0, scrollingY, background.width * 1.6, background.height * 1.6);
+        ctx.drawImage(mainCharacter,mainCharacterX,mainCharacterY, mainCharacter.width * 0.5, mainCharacter.height * 0.5);
+        ctx.drawImage(deathZone, deathShakeX, deathShakeY, deathZone.width * 1.1, deathZone.height * 1.2);
+        ctx.drawImage(blueJelly, 200, scrollingY+2000);
+        ctx.drawImage(blueJelly, 400, scrollingY+200);
+        ctx.drawImage(blueJelly, 0, scrollingY-500);
+        ctx.drawImage(blueJelly, 350, scrollingY+1200);
+        ctx.drawImage(fireJelly, 150, scrollingY+1000);
+        ctx.drawImage(purpleJelly, 0, scrollingY+900);
+        ctx.drawImage(purpleJelly, 200, scrollingY+650);
+        ctx.drawImage(purpleJelly, 200, scrollingY+1430);
+        ctx.drawImage(purpleJelly, 0, scrollingY+2730);
+        ctx.drawImage(purpleJelly, 0, scrollingY+2200);
+        ctx.drawImage(fireJelly, 350, scrollingY+450)
+        ctx.drawImage(fireJelly, 100, scrollingY+0)
+        ctx.drawImage(fireJelly, 0, scrollingY-200)
+        ctx.drawImage(fireJelly, 350, scrollingY+1650)
+        ctx.drawImage(fireJelly, 350, scrollingY+2500)
+        ctx.drawImage(greenJelly,0,scrollingY+2050);
+        ctx.drawImage(greenJelly,0,scrollingY+1100);
+        ctx.drawImage(greenJelly,400,scrollingY-700);
+        // ctx.drawImage(greenJelly,0,scrollingY+0);
+        scrollingY+= 1;
+        iteration++;
+        if(iteration < 50){
+        deathShakeX +=1;
+        deathShakeY -=1;
+        // console.log("1");
+        }
+        else{
+            deathShakeX -=1;
+            deathShakeY +=1;
+            // console.log("2");
+        }
+        if(iteration == 98){
+            iteration = 0;
+        }
+        if(mainCharacterY <= 400){
+            mainCharacterY +=3;
+        }
+        if(mainCharacterX < 0){
+            mainCharacterX = 450;
+        }
+        if (mainCharacterX > 460){
+            mainCharacterX = 0;
+        }
+        // console.log(mainCharacterY);
+        // console.log("I ran ");
+        window.requestAnimationFrame(draw);
+    }
+</script>
+<body onload="init();">
+    <!--<h1>Hop Bunny Hop</h1>-->
+	<!--<div class="game-base-container">-->
+		<canvas id="canvas" width="540" height="640"></canvas>
+	<!--</div>-->
+</body>
+</html>
